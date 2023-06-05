@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://y1s7mmiar7yq"]
+
+[ext_resource type="Texture2D" uid="uid://dwiirdje46d56" path="res://icon.svg" id="1_l28w8"]
+[ext_resource type="Script" path="res://Item.gd" id="2_d0yrm"]
+
+[resource]
+script = ExtResource("2_d0yrm")
+name = "Item1"
+icon = ExtResource("1_l28w8")
+display_name = "Item 1"
+description = "Item 1 description"
+level = 1
+prerequisite = Array[ExtResource("2_d0yrm")]([])
+type = "Weapon"
