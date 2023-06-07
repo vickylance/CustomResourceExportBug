@@ -10,5 +10,4 @@ icon = ExtResource("1_l28w8")
 display_name = "Item 1"
 description = "Item 1 description"
 level = 1
-prerequisite = Array[ExtResource("2_d0yrm")]([])
 type = "Weapon"

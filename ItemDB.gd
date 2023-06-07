@@ -1,6 +1,6 @@
 extends Node
 
-var items: Array[Item] = []
+var items = []
 @export var items_path: String = "res://items/"
 
 
@@ -20,8 +20,6 @@ func load_items(path: String):
 			elif dir.current_is_dir():
 				load_items(path + file_name + "/")
 			file_name = dir.get_next()
-#		for item in items:
-#			print(item.name)
 	else:
 		print("An error occurred when trying to access the path.")
 	pass
