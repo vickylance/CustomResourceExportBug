@@ -19,16 +19,16 @@ jobs:
       - run:
           name: Download Godot 4
           command: |
-            wget -q https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_linux.x86_64.zip
-            unzip Godot_v${GODOT_VERSION}_linux.x86_64.zip
-            mv Godot_v${GODOT_VERSION}_linux.x86_64 godot
+            wget -q https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip
+            unzip Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip
+            mv Godot_v${GODOT_VERSION}-stable_linux.x86_64 godot
             chmod +x godot
       - run:
           name: Download Godot 4 Export Templates
           command: |
-            wget -q https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_export_templates.tpz
+            wget -q https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_export_templates.tpz
             mkdir -p ~/.local/share/godot/export_templates
-            unzip Godot_v${GODOT_VERSION}_export_templates.tpz -d ~/.local/share/godot/export_templates
+            unzip Godot_v${GODOT_VERSION}-stable_export_templates.tpz -d ~/.local/share/godot/export_templates
             mv ~/.local/share/godot/export_templates/templates ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
       - run:
           name: Download ITCH.io butler
